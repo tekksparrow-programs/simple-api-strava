@@ -6,8 +6,8 @@ import os
 load_dotenv()
 
 # Set local id, secret, and redirect_url variables
-client_id = os.getenv('STRAVA_CLIENT_ID')
-client_secret = os.getenv('STRAVA_CLIENT_SECRET')
+client_id = os.getenv('CLIENT_ID')
+client_secret = os.getenv('CLIENT_SECRET')
 redirect_url = "https://tekksparrow-programs.github.io/website/"
 
 # Create session variable
@@ -24,7 +24,7 @@ redirect_response = input(f"Paste redirect url here: ")
 
 # Get oauth token
 token_url = "https://www.strava.com/api/v3/oauth/token"
-token = session.fetch_token(
+session.fetch_token(
     token_url=token_url,
     client_id=client_id,
     client_secret=client_secret,
