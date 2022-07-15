@@ -2,7 +2,7 @@
 Youtube Simple API series example for Strava
 
 # Status
-Pending video
+Done
 
 # Steps
 1. Clone this repo
