@@ -40,4 +40,4 @@ print("\n\n\n")
 print(f"Response Status: {response.status_code}")
 print(f"Response Reason: {response.reason}")
 print(f"Time Elaspsed: {response.elapsed}")
-print(f"Response Text: \n{'-'*15}\n{response.text}"
+print(f"Response Text: \n{'-'*15}\n{response.text}")
